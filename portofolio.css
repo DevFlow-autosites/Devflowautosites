@@ -1,0 +1,130 @@
+/* ====== PORTFÓLIO ====== */
+.portfolio-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Card */
+.work-card{
+  background:#fff;
+  border:1px solid #e6e9f0;
+  border-radius:18px;
+  box-shadow:0 10px 22px rgba(15,23,42,.06);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+/* Thumb com “moldura” device */
+.work-thumb{
+  display:block;
+  border-bottom:1px solid #eef2f7;
+  background:#f8fafc;
+}
+.work-thumb img{
+  width:100%;
+  display:block;
+  aspect-ratio: 16 / 10;        /* altura consistente como no print */
+  object-fit: cover;
+  border-radius:14px;
+  margin: 16px;
+  box-shadow: 0 14px 28px rgba(15,23,42,.14);
+}
+
+/* Body */
+.work-body{ padding: 14px 18px 18px }
+.work-title-row{
+  display:flex; align-items:center; gap:10px; justify-content:space-between;
+}
+.work-title{
+  margin:0;
+  font: 800 1.15rem Manrope, Inter, system-ui, sans-serif;
+  color:#0b1220;
+}
+.work-badge{
+  display:inline-block;
+  font-weight:700; font-size:.78rem;
+  padding:6px 10px; border-radius:999px;
+  background:#e9eefc; color:#2342c7;
+}
+.work-badge.is-premium{ background:#efe9ff; color:#6d28d9 }
+.work-badge.is-pro{ background:#e9eefc; color:#1e3a8a }
+
+.work-desc{
+  color:#64748b;
+  margin:6px 0 0;
+}
+
+/* Hover lift */
+.work-card:hover{ transform: translateY(-3px); box-shadow:0 16px 30px rgba(15,23,42,.08); transition:.18s }
+
+/* Responsivo */
+@media (max-width: 1200px){
+  .portfolio-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 680px){
+  .portfolio-grid{ grid-template-columns: 1fr; }
+  .work-thumb img{ margin:12px }
+}
+/* ====== Métricas (linha de KPIs) ====== */
+.stats-line{
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.kpi{
+  display: grid;
+  gap: 6px;
+}
+.kpi__value{
+  font: 800 clamp(1.6rem, 1rem + 2vw, 2.2rem) Manrope, Inter, system-ui, sans-serif;
+  color: #2563eb; /* azul forte */
+  text-align: center;
+}
+.kpi__label{
+  color: #6b7280;
+  text-align: center;
+}
+
+/* ====== Testemunhos ====== */
+.testimonials{
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.t-card{
+  background: #fff;
+  border: 1px solid #e6e9f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(15,23,42,.06);
+  padding: 22px 24px;
+  text-align: left;
+}
+.t-card__stars{
+  color: #f97316;           /* laranja das estrelas */
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.t-card__text{
+  color:#475569;
+  margin:0 0 14px 0;
+  line-height:1.65;
+}
+.t-card__author{
+  font-weight: 800;
+  color:#0b1220;
+}
+.t-card__role{
+  color:#7a8aa3;
+}
+
+/* Responsivo */
+@media (max-width: 1000px){
+  .stats-line{ grid-template-columns: 1fr; gap: 18px }
+  .kpi__label{ font-size: .98rem }
+  .testimonials{ grid-template-columns: 1fr }
+}
