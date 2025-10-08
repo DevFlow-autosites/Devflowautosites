@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio — StandWeb Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/portofolio.css" />
+  <link rel="stylesheet" href="css/index.css" />
+
+</head>
+<body>
+<!-- ============== NAV ============== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">
+        <span class="brand__logo">
+          <!-- Logo simples em SVG (podes substituir por imagem) -->
+           <img src="Images/logo.png" alt="" class="work__img" />
+        </span>
+        <span class="brand_text"><strong>DevFlow</strong></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" class="nav_link nav_link--active">Home</a>
+        <a href="about.html">Sobre Nós</a>
+        <a href="packs.html">Pacotes</a>
+        <a href="portofolio.html">Portfólio</a>
+        <a href="contacts.html">Contactos</a>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="contacts.html">Start now</a>
+
+      <!-- Menu mobile (sem JS, abre via checkbox) -->
+      <input id="nav-toggle" class="nav__toggle" type="checkbox" aria-label="Abrir menu">
+      <label for="nav-toggle" class="nav__burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav__drawer" aria-label="Mobile">
+        <a href="index.html" class="nav_link nav_link--active">Home</a>
+        <a href="about.html">Sobre Nós</a>
+        <a href="packs.html">Pacotes</a>
+        <a href="portofolio.html">Portfólio</a>
+        <a href="contacts.html">Contactos</a>
+        <a class="btn btn--primary nav__drawer-cta" href="contacts.html">Start now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <h1 class="page-hero__title">Portfólio</h1>
+      <p class="page-hero__lead">
+        Conheça alguns dos websites que desenvolvemos para stands de automóveis em todo o
+        país. Cada projeto é único e personalizado.
+      </p>
+    </div>
+  </section>
+
+  <!-- GRID DE PROJETOS -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="portfolio-grid">
+        <!-- Card 1 -->
+        <article class="work-card">
+          <a href="#" class="work-thumb" aria-label="Abrir projeto Auto Premium Lisboa">
+            <img src="portfolio-1.jpg" alt="Auto Premium Lisboa - mockup" />
+          </a>
+          <div class="work-body">
+            <div class="work-title-row">
+              <h3 class="work-title">Auto Premium Lisboa</h3>
+              <span class="work-badge is-pro">Profissional</span>
+            </div>
+            <p class="work-desc">
+              Website completo com sistema de gestão de inventário e calculadora de financiamento
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="work-card">
+          <a href="#" class="work-thumb" aria-label="Abrir projeto Motors Elite Porto">
+            <img src="portfolio-2.jpg" alt="Motors Elite Porto - mockup" />
+          </a>
+          <div class="work-body">
+            <div class="work-title-row">
+              <h3 class="work-title">Motors Elite Porto</h3>
+              <span class="work-badge is-premium">Premium</span>
+            </div>
+            <p class="work-desc">
+              Plataforma moderna com design dark e integração de redes sociais
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="work-card">
+          <a href="#" class="work-thumb" aria-label="Abrir projeto CarDealer Express">
+            <img src="portfolio-3.jpg" alt="CarDealer Express - mockup" />
+          </a>
+          <div class="work-body">
+            <div class="work-title-row">
+              <h3 class="work-title">CarDealer Express</h3>
+              <span class="work-badge is-pro">Profissional</span>
+            </div>
+            <p class="work-desc">
+              Website responsivo com comparador de veículos e sistema de reservas
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="work-card">
+          <a href="#" class="work-thumb" aria-label="Abrir projeto Cestauto">
+            <img src="portfolio-4.jpg" alt="Cestauto - mockup" />
+          </a>
+          <div class="work-body">
+            <div class="work-title-row">
+              <h3 class="work-title">Cestauto</h3>
+              <span class="work-badge is-pro">Profissional</span>
+            </div>
+            <p class="work-desc">Catálogo rápido com filtros avançados e SEO otimizado</p>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="work-card">
+          <a href="#" class="work-thumb" aria-label="Abrir projeto LuxuRy Motors">
+            <img src="portfolio-5.jpg" alt="LuxuRy Motors - mockup" />
+          </a>
+          <div class="work-body">
+            <div class="work-title-row">
+              <h3 class="work-title">LuxuRy Motors</h3>
+              <span class="work-badge is-premium">Premium</span>
+            </div>
+            <p class="work-desc">Design premium com área de cliente e CRM integrado</p>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="work-card">
+          <a href="#" class="work-thumb" aria-label="Abrir projeto AutoOne">
+            <img src="portfolio-6.jpg" alt="AutoOne - mockup" />
+          </a>
+          <div class="work-body">
+            <div class="work-title-row">
+              <h3 class="work-title">AutoOne</h3>
+              <span class="work-badge is-pro">Profissional</span>
+            </div>
+            <p class="work-desc">Landing de alta conversão com integrações de leads</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- ============== RESULTADOS (Métricas) ============== -->
+<section class="section section--light" id="resultados">
+  <div class="container section_inner section_inner--center">
+    <h2 class="section__title">Resultados que Falam por Si</h2>
+
+    <div class="stats-line">
+      <div class="kpi">
+        <div class="kpi__value">+150%</div>
+        <div class="kpi__label">Aumento médio de leads online</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__value">4.9/5</div>
+        <div class="kpi__label">Avaliação média dos clientes</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__value">98%</div>
+        <div class="kpi__label">Taxa de satisfação</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TESTEMUNHOS ============== -->
+<section class="section" id="testemunhos">
+  <div class="container section_inner section_inner--center">
+    <h2 class="section__title">O Que Dizem os Nossos Clientes</h2>
+
+    <div class="testimonials">
+      <!-- Card 1 -->
+      <article class="t-card">
+        <div class="t-card__stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="t-card__text">
+          "O website criado pela StandWeb Pro transformou completamente o nosso negócio.
+          Agora recebemos leads qualificados todos os dias e as nossas vendas online triplicaram!"
+        </p>
+        <div class="t-card__author">João Silva</div>
+        <div class="t-card__role">Diretor, Auto Premium Lisboa</div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="t-card">
+        <div class="t-card__stars" aria-label="5 estrelas">★★★★★</div>
+        <p class="t-card__text">
+          "Profissionalismo de excelência! A equipa entendeu perfeitamente o que precisávamos e
+          entregou um website moderno e funcional. Recomendo vivamente!"
+        </p>
+        <div class="t-card__author">Maria Santos</div>
+        <div class="t-card__role">Proprietária, Motors Elite Porto</div>
+      </article>
+    </div>
+  </div>
+</section>
+  <!-- FOOTER (mesmo das outras páginas) -->
+  <footer class="footer footer--dark" id="contactos">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <div class="brand_logo footer_logo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm0 3.2a1 1 0 0 1 1 1v2.6h2.6a1 1 0 1 1 0 2H13v2.6a1 1 0 1 1-2 0V10.8H8.4a1 1 0 0 1 0-2H11V6.2a1 1 0 0 1 1-1Z"/></svg>
+        </div>
+        <div>
+          <div class="footer__title">StandWeb Pro</div>
+          <p class="footer__text">Especialistas em websites profissionais para stands de automóveis.</p>
+        </div>
+      </div>
+
+      <nav class="footer__col">
+        <div class="footer__heading">Links Rápidos</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Sobre Nós</a></li>
+          <li><a href="pacotes.html">Pacotes</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <div class="footer__heading">Contactos</div>
+        <ul class="footer__contact">
+          <li><span class="ico ico--phone"></span><a href="tel:+351912345678">+351 912 345 678</a></li>
+          <li><span class="ico ico--mail"></span><a href="mailto:info@standwebpro.pt">info@standwebpro.pt</a></li>
+          <li><span class="ico ico--map"></span>Av. da Liberdade, 123<br>1250-140 Lisboa, Portugal</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__heading">Siga-nos</div>
+        <div class="footer__social">
+          <a href="#" class="social__btn" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 10h3l.5-3H13V5.5c0-.9.3-1.5 1.6-1.5H17V1.1C16.4 1 15.4 1 14.2 1 11.7 1 10 2.6 10 5.2V7H7v3h3v9h3v-9z"/></svg></a>
+          <a href="#" class="social__btn" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm6-2a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm-6 4a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"/></svg></a>
+          <a href="#" class="social__btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 5 2.12 5 3.5zM0 8h5v15H0zM8 8h4.8v2.1h.1c.7-1.3 2.3-2.6 4.7-2.6 5 0 5.9 3.3 5.9 7.6V23H19v-6.7c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6V23H8z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr class="footer__sep">
+      <div class="footer__bottom">
+        <p>© <span id="y"></span> StandWeb Pro. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
