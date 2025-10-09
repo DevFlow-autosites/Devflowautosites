@@ -342,7 +342,36 @@
       </div>
     </div>
   </footer>
+  <div id="popup-dev" class="popup">
+    <div class="popup__content">
+      <p>🚧 Portfolio is still under development!</p>
+      <button id="popup-close" class="popup__close">OK</button>
+    </div>
+  </div>
+  <script>
+  // Seleciona o link do portfólio
+  const portfolioLink = document.querySelector('a[href="portofolio.html"]');
+  const popup = document.getElementById('popup-dev');
+  const popupClose = document.getElementById('popup-close');
 
+  // Quando clicarem no link, previne navegação e mostra popup
+  portfolioLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    popup.style.display = 'flex';
+  });
+
+  // Fecha o popup ao clicar no botão
+  popupClose.addEventListener('click', function() {
+    popup.style.display = 'none';
+  });
+
+  // Fecha o popup se clicar fora do conteúdo
+  popup.addEventListener('click', function(e) {
+    if(e.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+</script>
   <script>
     // Ano automático no footer (opcional)
     document.getElementById('y').textContent = new Date().getFullYear();
@@ -350,3 +379,4 @@
 </body>
 
 </html>
+
