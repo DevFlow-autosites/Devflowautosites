@@ -350,28 +350,30 @@
   </div>
   <script>
   // Seleciona o link do portfólio
-  const portfolioLink = document.querySelector('.portfolio-link');
-const popup = document.getElementById('popup-dev');
-const popupClose = document.getElementById('popup-close');
-
-  // Quando clicarem no link, previne navegação e mostra popup
-  portfolioLink.addEventListener('click', function(e) {
-    e.preventDefault();
-    popup.style.display = 'flex';
+  const portfolioLinks = document.querySelectorAll('.portfolio-link');
+  const popup = document.getElementById('popup-dev');
+  const popupClose = document.getElementById('popup-close');
+  
+  // Aplica o evento de clique a todos os links
+  portfolioLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      popup.style.display = 'flex';
+    });
   });
-
+  
   // Fecha o popup ao clicar no botão
   popupClose.addEventListener('click', function() {
     popup.style.display = 'none';
   });
-
+  
   // Fecha o popup se clicar fora do conteúdo
   popup.addEventListener('click', function(e) {
-    if(e.target === popup) {
+    if (e.target === popup) {
       popup.style.display = 'none';
     }
   });
-</script>
+  </script>
   <script>
     // Ano automático no footer (opcional)
     document.getElementById('y').textContent = new Date().getFullYear();
@@ -379,6 +381,7 @@ const popupClose = document.getElementById('popup-close');
 </body>
 
 </html>
+
 
 
 
