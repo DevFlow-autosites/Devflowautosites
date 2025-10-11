@@ -369,19 +369,28 @@ body{
   position:relative;
   border-color: rgba(37,99,235,.35);
 }
-.plan--popular::after{
-  /* brilho suave na borda */
-  content:""; position:absolute; inset:-2px;
-  border-radius:22px;
-  pointer-events:none;
+.plan--popular::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 22px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(37,99,235,0.25), rgba(37,99,235,0.15));
+  box-shadow: 0 0 12px rgba(37,99,235,0.25);
 }
-.plan__badge{
-  position:absolute; left:50%; top:-14px; transform: translateX(-50%);
-  background: linear-gradient(180deg, #fb923c, #f97316);
-  color:#fff; font-weight:700; font-size:.82rem;
-  padding:6px 12px; border-radius:999px;
+.plan__badge {
+  position: absolute; 
+  left: 50%; 
+  top: -14px; 
+  transform: translateX(-50%);
+  background: #f97316; /* laranja sólido */
+  color: #fff; 
+  font-weight: 700; 
+  font-size: .82rem;
+  padding: 6px 12px; 
+  border-radius: 999px;
   box-shadow: 0 8px 18px rgba(249,115,22,.35);
-  z-index:5;
+  z-index: 5;
 }
 
 /* Hover */
@@ -607,6 +616,7 @@ body{
   cursor: pointer;
   font-weight: 600;
 }
+
 
 
 
