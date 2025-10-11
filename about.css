@@ -41,7 +41,11 @@
   display:grid; place-items:center; margin-bottom:10px;
   background:#eef4ff; color:#1d4ed8; font-size:20px; font-weight:700;
 }
-.card-soft__title{ margin:.2rem 0 .2rem; font-weight:800 }
+.card-soft__title{ 
+  margin:.2rem 0 .2rem; 
+  font-weight:800 
+  color: black;
+}
 .card-soft__text{ color:#55657b; margin:0 }
 
 /* ====== Stats ====== */
@@ -81,4 +85,5 @@
 }
 @media (max-width: 640px){
   .values, .stats, .steps{ grid-template-columns: 1fr }
+
 }
