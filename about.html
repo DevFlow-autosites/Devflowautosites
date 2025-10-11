@@ -296,12 +296,27 @@
     }
   });
   </script>
+   const currentPage = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll(".nav__link");
+
+  links.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (
+      href === currentPage ||
+      (href === "about.html")
+    ) {
+      link.classList.add("nav__link--active");
+    }
+  });
+</script>
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
 
 </html>
+
 
 
 
