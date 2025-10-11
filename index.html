@@ -27,7 +27,7 @@
         <a href="index.html" class="nav_link nav_link--active">Home</a>
         <a href="about.html">About Us</a>
         <a href="packs.html">Packages</a>
-        <a href="#">Portfolio</a>
+        <a href="#" class="portfolio-link">Portfolio</a>
         <a href="contacts.html">Contact</a>
       </nav>
 
@@ -42,7 +42,7 @@
         <a href="index.html" class="nav_link nav_link--active">Home</a>
         <a href="about.html">About us</a>
         <a href="packs.html">Packages</a>
-        <a href="#">Portfolio</a>
+        <a href="#" class="portfolio-link">Portfolio</a>
         <a href="contacts.html">Contact</a>
         <a class="btn btn--primary nav__drawer-cta" href="contacts.html">Start now</a>
       </nav>
@@ -74,7 +74,7 @@
         <a class="btn btn--primary btn--lg" href="#">
           Start Here - Go Digital <span class="btn__arrow">→</span>
         </a>
-        <a class="btn btn--ghost btn--lg" href="#">Explore Our Past Projects</a>
+        <a class="btn btn--ghost btn--lg" href="#" class="portfolio-link">Explore Our Past Projects</a>
       </div>
 
       <!-- ============== FEATURES ============== -->
@@ -283,7 +283,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About us</a></li>
           <li><a href="packs.html">Packages</a></li>
-          <li><a href="#">Portfolio</a></li>
+          <li><a href="#" class="portfolio-link">Portfolio</a></li>
         </ul>
       </nav>
 
@@ -350,9 +350,9 @@
   </div>
   <script>
   // Seleciona o link do portfólio
-  const portfolioLink = document.querySelector('a[href="portofolio.html"]');
-  const popup = document.getElementById('popup-dev');
-  const popupClose = document.getElementById('popup-close');
+  const portfolioLink = document.querySelector('.portfolio-link');
+const popup = document.getElementById('popup-dev');
+const popupClose = document.getElementById('popup-close');
 
   // Quando clicarem no link, previne navegação e mostra popup
   portfolioLink.addEventListener('click', function(e) {
@@ -379,6 +379,7 @@
 </body>
 
 </html>
+
 
 
 
