@@ -311,10 +311,25 @@
     });
   }
 </script>
+<script>
+ const currentPage = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll(".nav__link");
 
+  links.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (
+      href === currentPage ||
+      (href === "contacts.html")
+    ) {
+      link.classList.add("nav__link--active");
+    }
+  });
+</script>
 
 </body>
 </html>
+
 
 
 
