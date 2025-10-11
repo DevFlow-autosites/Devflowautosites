@@ -43,7 +43,7 @@
 }
 .card-soft__title{ 
   margin:.2rem 0 .2rem; 
-  font-weight:800 
+  font-weight:800;
   color: black;
 }
 .card-soft__text{ color:#55657b; margin:0 }
@@ -87,3 +87,4 @@
   .values, .stats, .steps{ grid-template-columns: 1fr }
 
 }
+
