@@ -368,16 +368,11 @@ body{
 .plan--popular{
   position:relative;
   border-color: rgba(37,99,235,.35);
-  box-shadow:
-    0 12px 30px rgba(37,99,235,.18),
-    0 0 0 1px rgba(37,99,235,.25) inset;
 }
 .plan--popular::after{
   /* brilho suave na borda */
   content:""; position:absolute; inset:-2px;
   border-radius:22px;
-  background: radial-gradient(120% 120% at 50% 0%,
-              rgba(37,99,235,.25), transparent 60%);
   pointer-events:none;
 }
 .plan__badge{
@@ -611,4 +606,5 @@ body{
   cursor: pointer;
   font-weight: 600;
 }
+
 
