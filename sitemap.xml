@@ -3,28 +3,11 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Página principal -->
-  <url>
-    <loc>https://devflowautosites.pt/</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
-  </url>
-
-  <!-- Packs -->
-  <url>
-    <loc>https://devflowautosites.pt/packs.html</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Contactos -->
-  <url>
-    <loc>https://devflowautosites.pt/contacts.html</loc>
-    <lastmod>2025-10-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
+ <url>
+  <loc>https://devflowautosites.pt/</loc>
+  <lastmod>2025-10-28</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
 
 </urlset>
