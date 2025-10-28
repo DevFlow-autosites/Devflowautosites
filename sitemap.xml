@@ -3,11 +3,13 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
- <url>
+<url>
   <loc>https://devflowautosites.pt/</loc>
-  <lastmod>2025-10-28</lastmod>
-  <changefreq>daily</changefreq>
   <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://devflowautosites.pt/about.html</loc>
+  <priority>0.70</priority>
 </url>
 
 </urlset>
