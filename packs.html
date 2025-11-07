@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>DevFlow</title>
+  <link rel="icon" type="image/png" href="Df.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="packs.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+ <!-- ============== NAV ============== -->
+ <header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="index.html">
+      <span class="brand__logo">
+        <img src="logo.png" alt="Logo DevFlow" class="work__img" />
+      </span>
+      <span class="brand__text"><strong>DevFlow</strong></span>
+    </a>
+
+    <!-- Links Desktop -->
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">Sobre nós</a>
+      <a href="packs.html" class="nav__link">Pacotes</a>
+      <a href="#" class="nav__link portfolio-link">Portfólio</a>
+      <a href="contacts.html" class="nav__link">Contactos</a>
+    </nav>
+
+    <a class="btn btn--primary nav__cta" href="contacts.html">Comece agora</a>
+
+    <!-- Menu mobile -->
+    <input id="nav-toggle" class="nav__toggle" type="checkbox" aria-label="Abrir menu">
+    <label for="nav-toggle" class="nav__burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav__drawer" aria-label="Mobile">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">Sobre nós</a>
+      <a href="packs.html" class="nav__link">Pacotes</a>
+      <a href="#" class="nav__link portfolio-link">Portfólio</a>
+      <a href="contacts.html" class="nav__link">Contactos</a>
+      <a class="btn btn--primary nav__drawer-cta" href="contacts.html">Comece agora</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- Cabeçalho da página (igual ao screenshot) -->
+  <section class="page-hero page-hero--short">
+    <div class="container page-hero__inner">
+      <h1 class="page-hero__title">Pacotes de serviços</h1>
+      <p class="page-hero__lead">
+       Escolha o pacote ideal para o seu negócio. Todos os pacotes incluem design responsivo, otimização de SEO e suporte técnico dedicado.
+      </p>
+    </div>
+  </section>
+
+  <!-- Grelha de pacotes (3 por linha) -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="pricing-grid">
+        <!-- Essencial -->
+        <article class="plan">
+          <header class="plan__head">
+            <h3 class="plan__title">Essencial</h3>
+            <p class="plan__desc">Ideal para concessionários que desejam estabelecer sua presença digital.</p>
+          </header>
+          <ul class="plan__list">
+            <li>Design responsivo moderno</li>
+            <li>Até 5 páginas</li>
+            <li>Página de contato</li>
+            <li>Integração com o Google Maps</li>
+            <li>Otimização para dispositivos móveis</li>
+            <li>Suporte de 15 dias</li>
+          </ul>
+          <a href="contacts.html" class="btn btn--primary plan__cta">Saiba mais</a>
+        </article>
+
+        <!-- Profissional (Mais Popular) -->
+        <article class="plan plan--popular">
+          <div class="plan__badge">Maios popular</div>
+          <header class="plan__head">
+            <h3 class="plan__title">Profissional</h3>
+            <p class="plan__desc">A opção mais popular para negócios já estabelecidas.</p>
+          </header>
+          <ul class="plan__list">
+            <li>Tudo do pack essencial</li>
+            <li>Até 10 páginas</li>
+            <li>Sistema de gestão de inventário</li>
+            <li>Integração com redes sociais</li>
+            <li>Integração com Google Analytics</li>
+            <li>Sistema de newsletter</li>
+            <li>Galeria de imagens avançada</li>
+            <li>Gestão de Back Office</li>
+            <li>Suporte por 30 dias</li>
+          </ul>
+          <a href="contacts.html" class="btn btn--primary plan__cta">Saiba mais</a>
+        </article>
+
+        <!-- Premium -->
+        <article class="plan">
+          <header class="plan__head">
+            <h3 class="plan__title">Premium</h3>
+            <p class="plan__desc">A complete and fully customized solution for your business.</p>
+          </header>
+          <ul class="plan__list">
+            <li>Tudo do pack profissional</li>
+            <li>Páginas ilimitadas</li>
+            <li>Sistema CRM integrado para gestão de leads</li>
+            <li>Área administrativa personalizada</li>
+            <li>Sistema de reservas online</li>
+            <li>Calculadora de Financiamento</li>
+            <li>Integração com Google Analytics avançado</li>
+            <li>Suporte prioritário 24/7 - 3 meses</li>
+          </ul>
+          <a href="contacts.html" class="btn btn--primary plan__cta">Saiba mais</a>
+        </article>
+
+        <!-- Exemplo de futuros pacotes: basta duplicar -->
+        <!-- <article class="plan">...</article> -->
+      </div>
+    </div>
+  </section>
+  <!-- ============== SERVIÇOS ADICIONAIS ============== -->
+<section class="section section--light" id="servicos-adicionais">
+  <div class="container section_inner section_inner--center">
+    <h2 class="section__title">Serviços adicionais</h2>
+    <p class="section__lead">
+      Personalize ainda mais com os nossos serviços complementares.
+    </p>
+
+    <div class="addons">
+      <!-- Card 1 -->
+      <article class="addon-card">
+        <h3 class="addon-card__title">Fotografia profissional</h3>
+        <p class="addon-card__desc">
+         Sessões fotográficas profissionais dos seus veículos para o site.
+        </p>
+        <div class="addon-card__price">A partir de 50€</div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="addon-card">
+        <h3 class="addon-card__title">Manutenção mensal</h3>
+        <p class="addon-card__desc">
+          Atualizações, backups e suporte técnico contínuo.
+        </p>
+        <div class="addon-card__price">A partir de €150/mês</div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ============== CTA DÚVIDAS PACOTES ============== -->
+<section class="cta cta--slim">
+  <div class="container cta__inner">
+    <h2 class="cta__title">Não tem certeza de qual pacote ideal para o seu negócio?</h2>
+    <p class="cta__lead">
+      Entre em contato conosco e em equipa ajudamos a escolher a solução perfeita para o seu concessionário. 
+    </p>
+    <a href="contacts.html" class="btn btn--primary btn--lg cta__btn">
+      Fale com um especialista <span class="btn__arrow">→</span>
+    </a>
+  </div>
+</section>
+
+  <!-- ============== FOOTER NOVO ============== -->
+  <footer class="footer footer--dark">
+    <div class="container footer__top">
+      <!-- Brand -->
+      <div class="footer__brand">
+        <div class="brand_logo footer_logo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm0 3.2a1 1 0 0 1 1 1v2.6h2.6a1 1 0 1 1 0 2H13v2.6a1 1 0 1 1-2 0V10.8H8.4a1 1 0 0 1 0-2H11V6.2a1 1 0 0 1 1-1Z"/></svg>
+        </div>
+        <div>
+          <div class="footer__title">DevFlow</div>
+          <p class="footer__text"> Especialistas em websites profissionais para concessionárias de veículos. Transformamos sua presença digital.
+          </p>
+        </div>
+      </div>
+
+      <!-- Links rápidos -->
+      <nav class="footer__col">
+        <div class="footer__heading">Links rápidos</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Sobre nós</a></li>
+          <li><a href="packs.html">Serviços</a></li>
+          <li><a href="#" class="portfolio-link">Portfólio</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contactos -->
+      <div class="footer__col">
+        <div class="footer__heading">Contactos</div>
+        <ul class="footer__contact">
+          <li>
+            <span class="ico white" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="20" height="20">
+                <path fill="white" d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/>
+              </svg>
+            </span>
+            <a href="tel:+351928069166">+351 928 069 166</a>
+          </li>
+          <li>
+            <span class="ico white" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="20" height="20">
+                <path fill="white" d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/>
+              </svg>
+            </span>
+            <a href="tel:+351961662661">+351 961 662 661</a>
+          </li>
+          <li>
+            <span class="ico white" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="20" height="20">
+                <path fill="white" d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
+              </span>
+              <a href="mailto:devflowautosites@gmail.com">devflowautosites@gmail.com</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="footer__col">
+        <div class="footer__heading">Siga-nos</div>
+        <div class="footer__social">
+          <a href="#" class="social__btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M13 10h3l.5-3H13V5.5c0-.9.3-1.5 1.6-1.5H17V1.1C16.4 1 15.4 1 14.2 1 11.7 1 10 2.6 10 5.2V7H7v3h3v9h3v-9z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/devflowautosites/?utm_source=ig_web_button_share_sheet" class="social__btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm6-2a1 1 0 1 0 0 2 1 1 0 0 0 0-2Zm-6 4a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"/></svg>
+          </a>
+          <a href="#" class="social__btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 5 2.12 5 3.5zM0 8h5v15H0zM8 8h4.8v2.1h.1c.7-1.3 2.3-2.6 4.7-2.6 5 0 5.9 3.3 5.9 7.6V23H19v-6.7c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6V23H8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr class="footer__sep">
+      <div class="footer__bottom">
+        <p>© <span id="y">2025</span> DevFlow. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <div id="popup-dev" class="popup">
+    <div class="popup__content">
+      <p>🚧 Portfolio is still under development!</p>
+      <button id="popup-close" class="popup__close">OK</button>
+    </div>
+  </div>
+  <script>
+  // Seleciona o link do portfólio
+  const portfolioLinks = document.querySelectorAll('.portfolio-link');
+  const popup = document.getElementById('popup-dev');
+  const popupClose = document.getElementById('popup-close');
+  
+  // Aplica o evento de clique a todos os links
+  portfolioLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      popup.style.display = 'flex';
+    });
+  });
+  
+  // Fecha o popup ao clicar no botão
+  popupClose.addEventListener('click', function() {
+    popup.style.display = 'none';
+  });
+  
+  // Fecha o popup se clicar fora do conteúdo
+  popup.addEventListener('click', function(e) {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+  </script>
+  <script>
+   const currentPage = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll(".nav__link");
+
+  links.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (
+      href === currentPage ||
+      (href === "packs.html")
+    ) {
+      link.classList.add("nav__link--active");
+    }
+  });
+</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
+
+
+
